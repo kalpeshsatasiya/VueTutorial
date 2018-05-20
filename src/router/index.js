@@ -5,6 +5,7 @@ import First from '@/components/First'
 import Registration from '@/components/Registration'
 import FiltersDemo from '@/components/FiltersDemo'
 import DynamicComponent from '@/components/DynamicComponent'
+import CallParentMethodFromChild from '@/components/CallParentMethodFromChild'
 
 Vue.use(Router)
 Vue.filter('capitalizeGlobal', function (value) {
@@ -20,6 +21,11 @@ export default new Router({
       path: '/',
       name: 'FiltersDemo',
       component: FiltersDemo
+    },
+    {
+      path: '/parentDemo',
+      name: 'CallParentMethodFromChild',
+      component: CallParentMethodFromChild
     },
     {
       path: '/dynamicComponent',
